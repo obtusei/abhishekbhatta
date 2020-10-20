@@ -1,0 +1,91 @@
+::-moz-selection { /* Code for Firefox */
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+.container-fluid {
+    height: 100%;
+    margin-bottom: 55px;
+    margin-top: 55px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    min-height: 100%;
+    text-align:center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a{
+    font-size:20px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(53, 53, 53, 0.712);
+    font-weight: 200;
+    text-decoration: none;
+    padding: 20px;
+  }
+  a:hover{
+    color: black;
+    text-decoration: none;
+  }
+  a::selection{
+    color: red;
+  }
+
+  .navbar{
+    background-color: transparent !important;
+  }
+  .nav-link a{
+    background-color: red;
+  }
+  .navbar-toggler{
+    border: none;
+  }
+  .navbar-toggler:focus{
+    outline-width: 0px;;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .image-container {
+    position: relative;
+    width: 50%;
+  }
+
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
